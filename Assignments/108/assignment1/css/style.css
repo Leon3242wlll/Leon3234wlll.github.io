@@ -1,0 +1,7 @@
+nav {
+  background-color: orange;
+}
+li {
+  display: inline;
+  padding: 10px;
+}
