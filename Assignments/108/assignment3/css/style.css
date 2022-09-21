@@ -1,29 +1,31 @@
-  nav {
-    background-color: blue;
+body {
+    height: 1500px;
+    position: relative;
   }
 
-  ul {
-    display: flex;
-    justify-content: flex-end;
-    padding: 0;
+ nav {
+   background-color: lightyellow;
+}
+
+  #navbar1 {
+  background-color: orange;
+  position: absolute;
+  width: 100%;
  }
+
+#navbar2 {
+background-color: green;
+position: relative;
+top: 150px;
+}
+
+#navbar3 {
+    background-color: lightblue;
+    position: fixed;
+    bottom: 150px;
+}
 
  li {
    display: inline;
    padding: 10px;
- }
-
- #home {
-   margin-left: auto;
- }
-
-/* this is referred to as a mobile breakpoint */
-@media only screen and (max-width: 768px) {
-ul {
-flex-direction: column;
-align-items: center;
-  }
-#home {
-  margin-right: 0;
-  }
 }
