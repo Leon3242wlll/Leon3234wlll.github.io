@@ -1,0 +1,61 @@
+nav {
+  background-color: orange;
+}
+
+  ul {
+    display: flex;
+    justify-content:
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+    padding: 10px;
+  }
+
+  #home {
+    margin-right: auto;
+  }
+
+.dropdownContainer {
+  position: relative;
+}
+
+.dropdownMenu {
+  background-color: skyblue;
+ position: absolute;
+  flex-direction: column;
+  width: 100%;
+  left: 0px;
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition:
+  opacity 0.5,
+  visibility 0.5;
+}
+
+.dropdownContainer:hover .dropdown
+.dropdownMenu:hover {
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+}
+
+#fancy:hover {
+  background-color: orange;
+}
+#fancy a {
+  color: white;
+}
+  /* this is referred to as a mobile breakpoint */
+  /* @media only screen and (max-width: 768px) {
+    ul {
+      flex-direction: column;
+      align-items: center;
+  }
+  #home {
+    margin-right: 0;
+    }
+  } */
