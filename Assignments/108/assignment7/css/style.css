@@ -1,0 +1,69 @@
+#gallery2 {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+#gallery2a img {
+  height: 266.768px
+  width: 266.6px;
+  object-fit: cover;
+}
+
+#gallery3 img {
+  height: 200px;
+  flex: 1 0 auto;
+  object-fit: cover;
+}
+#gallery4 img {
+  width: 30%
+  margin: 12px;
+}
+
+#gallery5 {
+  columns: 3 auto;
+  column-gap: 24px;
+}
+
+#gallery5 img {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+/**********************************************
+Media Quary - Mobile Breakpoint
+***********************************************/
+  @media screen and (max-width: 800px) {
+  #siteGrid  {
+    grid-template-columns: 1fr;
+    grid-template-columns:
+    "navArea"
+    "heroArea"
+    "twoCardsArea."
+    "galley1Area."
+    "footerArea";
+
+  }
+  nav,
+  #threeCards
+  #twoCards {
+    flex-direction: column;
+  }
+
+ #gallery1
+ #gallery2 {
+   grid-template-columns: 1fr;
+ }
+
+#gallery2 img {
+  width: 100%;
+  height: auto;
+}
+
+  #gallery4 img {
+    width: 45%;
+  }
+
+#gallery5 {
+  columns: 2 auto;
+  }
+}
