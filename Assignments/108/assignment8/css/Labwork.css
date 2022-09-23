@@ -1,0 +1,24 @@
+body {
+
+ #navbar1 {
+ background-color: orange;
+ position: absolute;
+ width: 100%;
+}
+
+#navbar2 {
+background-color: darkblue;
+position: relative;
+top: 150px;
+}
+
+#navbar3 {
+   background-color: lightblue;
+   position: fixed;
+   bottom: 150px;
+}
+
+li {
+  display: inline;
+  padding: 10px;
+}
