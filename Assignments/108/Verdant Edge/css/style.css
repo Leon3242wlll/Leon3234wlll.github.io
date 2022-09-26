@@ -1,0 +1,29 @@
+#navbar1 {
+  background-color: lightblue;
+  position: static;
+  width: 100%;
+ }
+li {
+  display: inline;
+  padding: 10px;
+}
+
+#navbar2 {
+  background-color: lightgreen;
+  position: static;
+  width: 100%;
+  }
+li {
+  display: inline;
+  padding: 10px;
+}
+
+#navbar3 {
+  background-color: green;
+  position: static;
+  width: 100%;
+ }
+  li {
+  display: inline;
+  padding: 10px;
+}
