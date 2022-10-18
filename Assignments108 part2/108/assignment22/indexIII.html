@@ -42,6 +42,8 @@
     room.style.Height = roomHeight + 'px';
 
     let ballY = 0;
+    let ballX = 0;
+    let ballXSpeed;3;
     let ballYspeed = 0;
     let gravity = 0.3;
 
@@ -49,12 +51,14 @@
       //ballYspeed  += ballYspeed + gravity;
       ballX  += gravity;
       ballY += ballYspeed;
+
       ballX  += ballXSpeed;
       ballY += ballYspeed;
 
 
-      (ballY + ballYspeed > roomHeight) {
+    if  (ballY + ballYspeed > roomHeight) {
         ballY = roomHeight - ballHeight;
+        ballXspeed *= -0.99;
         ballYspeed *= -0.85;
       }
 
