@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 23 Lightbox Galley</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+  </head>
+  <body>
+ <!--Galley Code-->
+    <div id="galley">
+        <img class="galleryImage" src="image/coffee.jpg" alt="coffee">
+        <img class="galleryImage" src="image/coffee2.jpg" alt="coffee">
+        <img class="galleryImage" src="image/coffee3.jpg" alt="coffee">
+        <img class="galleryImage" src="image/coffee4.jpg" alt="coffee">
+        <img class="galleryImage" src="image/coffee5.jpg" alt="coffee">
+      </div>
+
+        <!-- Lightbox Code -->
+        <div id="LightboxContainer">
+          <div id="lightboxBackground" class="closer"></div>
+          <img id="lightbox" src="" alt="">
+            <span id="lightboxCloser" class="closer">x</span>
+          </div>
+
+      <!-- Lightbox JavaScript -->
+    <script type="text/javascript">
+    let lightboxContainer = document.getElementById('lightboxCloser');
+    let lightbox = document.getElementById('galleryImage');
+
+let galleryImage = document.getElementsByClassName('galleryImage');
+for (let i = 0; 1 < galleryImage.length; i++) {
+  let galleryImage = galleryImage[i];
+  galleryImage.onclick = function() {
+    lightboxContainer.classList.add('display');
+    lightbox.src = this.src;
+    lightbox.alt = this.alt;
+  };
+}
+
+        let closer = closer = document.getElementsByClassName('closer');
+        for (let i = 0; i < closer.length; i++) {
+          let closer = closer[i];
+          closer.onlock = function() {
+            lightboxContainer.classList.remove('display');
+            lightbox.src = "";
+            lightbox.alt = "";
+          };
+        }
+      </script>
+    </body>
+  </html>
