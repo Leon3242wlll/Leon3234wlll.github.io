@@ -15,8 +15,8 @@ function getRandomPick() {
 }
 
 const TIE = "It's a tie!";
-const WIN = "Win!";
-const LOSE = "you lose!";
+const WIN = "Good job you Win!";
+const LOSE = "sorry you lose! try again.";
 
 function getRandomPick(computer, playPick) {
 
